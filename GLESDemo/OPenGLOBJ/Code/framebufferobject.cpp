@@ -11,7 +11,6 @@
 FrameBufferObject::FrameBufferObject(){
     glGenFramebuffers(1, &mFrameBufferObject);
 }
-
 void FrameBufferObject::AttachColorBuffer(const char*bufferName, GLenum attachment, int width, int height){
     GLuint colorBuffer;
     glBindFramebuffer(GL_FRAMEBUFFER, mFrameBufferObject);
@@ -26,7 +25,6 @@ void FrameBufferObject::AttachColorBuffer(const char*bufferName, GLenum attachme
     mBuffers.insert(std::pair<std::string,GLuint>(bufferName,colorBuffer));
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
 }
-
 void FrameBufferObject::AttachDepthBuffer(const char*bufferName, int width, int height){
     GLuint depthMap;
     glBindFramebuffer(GL_FRAMEBUFFER, mFrameBufferObject);
@@ -63,11 +61,9 @@ void FrameBufferObject::Bind(){
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
-
 void FrameBufferObject::Unbind(){
     glBindFramebuffer(GL_FRAMEBUFFER, mPrevFrameBuffer);
 }
-
 GLuint FrameBufferObject::GetBuffer(const char*bufferName){
     auto iter = mBuffers.find(bufferName);
     if (iter!=mBuffers.end()){

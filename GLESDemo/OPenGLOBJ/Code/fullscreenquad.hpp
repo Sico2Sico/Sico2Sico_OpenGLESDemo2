@@ -20,10 +20,13 @@ public:
 public:
     void Init();
     void Draw();
+    void DrawThreed();
     void DrawToLeftTop();
     void DrawToRightTop();
     void DrawToLeftBottom();
     void DrawToRightBottom();
+    void YDXDraw(float width, float height);
 };
+
 
 #endif /* fullscreenquad_hpp */

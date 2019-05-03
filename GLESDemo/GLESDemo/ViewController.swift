@@ -12,6 +12,8 @@ import GLKit
 
 class ViewController: GLKViewController {
     var context : EAGLContext!
+    let rect = UIScreen.main.bounds
+    let scale = UIScreen.main.scale
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,23 +26,27 @@ class ViewController: GLKViewController {
         glView.context = context;
         glView.drawableDepthFormat = GLKViewDrawableDepthFormat.format24
         EAGLContext.setCurrent(context)
-        let rect = UIScreen.main.bounds
 
 
 //        DraWCube.configuration()
 //        DraWCube.setViewPortSize(Float(rect.width), height: Float(rect.height));
 
-        DrawLight.configuration()
-        DrawLight.setViewPortSize(Float(rect.width), height: Float(rect.height))
+//        DrawLight.configuration()
+//        DrawLight.setViewPortSize(Float(rect.width), height: Float(rect.height))
 
 
 //        DrawBull.configuration()
 //        DrawBull.setViewPortSize(Float(rect.width), height: Float(rect.height))
+
+        DrawPicture.configuration();
+        DrawPicture.setViewPortSize(Float(rect.width * scale), height: Float(rect.height * scale))
     }
 
     override func glkView(_ view: GLKView, drawIn rect: CGRect) {
 //        DraWCube.draw()
-          DrawLight.draw()
+//        DrawLight.draw()
 //        DrawBull.draw()
+
+        DrawPicture.draw(Float(rect.width*scale), height: Float(rect.height*scale))
     }
 }

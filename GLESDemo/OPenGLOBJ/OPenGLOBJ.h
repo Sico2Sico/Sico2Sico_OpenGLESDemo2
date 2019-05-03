@@ -10,7 +10,7 @@
 #import <OPenGLOBJ/DraWCube.h>
 #import <OPenGLOBJ/DrawLight.h>
 #import <OPenGLOBJ/DrawBull.h>
-
+#import <OPenGLOBJ/DrawPicture.h>
 //! Project version number for OPenGLOBJ.
 FOUNDATION_EXPORT double OPenGLOBJVersionNumber;
 

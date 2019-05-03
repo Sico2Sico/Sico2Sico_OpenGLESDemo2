@@ -32,6 +32,32 @@ void FullScreenQuad::Draw(){
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     mVertexBuffer->Unbind();
 }
+
+
+
+void FullScreenQuad::YDXDraw(float width, float height){
+
+    float s_scale =  ((width*1.0)/(height*1.0)) * ((1080*1.0)/(1920*1.0));
+
+    float identity[] = {
+        1.0f,0.0f,0.0f,0.0f,
+        0.0f,1.0f,0.0f,0.0f,
+        0.0f,0.0f,1.0f,0.0f,
+        0.0f,0.0f,0.0f,1.0f,
+    };
+
+
+    mVertexBuffer->SetPosition(0, -1.0f, -1.0f*s_scale, 0.0f);
+    mVertexBuffer->SetPosition(1, 1.0f, -1.0f*s_scale, 0.0f);
+    mVertexBuffer->SetPosition(2, -1.0f, 1.0f*s_scale, 0.0f);
+    mVertexBuffer->SetPosition(3, 1.0f, 1.0f*s_scale, 0.0f);
+    mVertexBuffer->Bind();
+    mShader->Bind(identity, identity, identity);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    mVertexBuffer->Unbind();
+}
+
+
 void FullScreenQuad::DrawToLeftTop(){
     float identity[] = {
         1.0f,0.0f,0.0f,0.0f,

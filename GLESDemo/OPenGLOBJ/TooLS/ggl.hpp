@@ -9,6 +9,7 @@
 #pragma once
 #include <OpenGLES/ES3/gl.h>
 #include <OpenGLES/ES3/glext.h>
+#include <SOILImage/SOIL.h>
 #include <stdio.h>
 #include <math.h>
 #include <string.h>

@@ -8,6 +8,7 @@
 
 #include "Tools.hpp"
 
+
 unsigned char* DecodeBMP(unsigned char*bmpFileData, int&width, int&height) {
     if (0x4D42 == *((unsigned short*)bmpFileData)) {
         int pixelDataOffset = *((int*)(bmpFileData + 10));
@@ -28,35 +29,39 @@ GLuint CreateTexture2D(unsigned char * pixlData, int width, int height, GLenum t
     GLuint texture;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D,texture);
+
+//#define GL_REPEAT                                        0x2901
+//#define GL_CLAMP_TO_EDGE                                 0x812F
+//#define GL_MIRRORED_REPEAT
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_MIRRORED_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_MIRRORED_REPEAT);
     glTexImage2D(GL_TEXTURE_2D, 0, type, width, height, 0, type, GL_UNSIGNED_BYTE, pixlData);
     glBindBuffer(GL_TEXTURE_2D, 0);
     return texture;
 }
 
-GLuint CreateTexture2DFromBMP(const char * bpmPath){
-    int fileSize =  0;
-    /// 文件加载
-    unsigned char * bmpFileContent = loadFileContent(bpmPath, fileSize);
-    if (bmpFileContent == nullptr) {
-        return 0;
-    }
+GLuint CreateTexture2DFromBMP(const char*bmpPath) {
 
-    int width =0, height = 0;
-    /// 解码
-    unsigned char * pixelData = DecodeBMP(bmpFileContent,width, height);
-    if (width == 0) {
-        delete bmpFileContent;
-        return 0;
-    }
-
-    /// 生成纹理
-    GLuint texture = CreateTexture2D(pixelData,width,height, GL_RGB);
-    delete bmpFileContent;
-    return  texture;
+    //    int nFileSize = 0;
+    //    unsigned char *bmpFileContent = LoadFileContent(bmpPath, nFileSize);
+    //    if (bmpFileContent == nullptr) {
+    //        return 0;
+    //    }
+    //    int bmpWidth = 0, bmpHeight = 0;
+    //    unsigned char*pixelData = DecodeBMP(bmpFileContent, bmpWidth, bmpHeight);
+    //    if (bmpWidth == 0) {
+    //        delete bmpFileContent;
+    //        return 0;
+    //    }
+    const char * imagePath = backoutBundlePath(bmpPath);
+    int bmpWidth = 0, bmpHeight = 0, chanles =0;
+    unsigned char * pixelData =  SOIL_load_image(imagePath, &bmpWidth, &bmpHeight,&chanles, SOIL_LOAD_RGB);
+    GLuint texture = CreateTexture2D(pixelData, bmpWidth, bmpHeight, GL_RGB);
+    //    delete bmpFileContent;
+    //    bmpFileContent = nullptr;
+    return texture;
 }
 
 GLuint CreateTextureCubeFromBMP(const char *front, const char *back, const char *left,

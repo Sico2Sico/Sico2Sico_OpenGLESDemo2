@@ -13,9 +13,7 @@ unsigned char * loadFileContent(const char* path , int& filesize){
     unsigned char * fileContent = nullptr;
     filesize = 0;
     NSString * pathFile = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:path] ofType:nil];
-
     NSData * data = [NSData dataWithContentsOfFile:pathFile];
-
     if ([data length] > 0 ) {
         filesize = [data length];
         fileContent = new unsigned char[filesize+1];
@@ -25,6 +23,12 @@ unsigned char * loadFileContent(const char* path , int& filesize){
 
     return  fileContent;
 }
+
+const char * backoutBundlePath(const char* imagePath){
+    NSString * pathFile = [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:imagePath] ofType:nil];
+    return  [pathFile UTF8String];
+}
+
 
 @implementation DraWCube
 

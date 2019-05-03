@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072A80F52279829D006FBD2D /* PictureHandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072A80F32279829D006FBD2D /* PictureHandle.cpp */; };
+		072A80F62279829D006FBD2D /* PictureHandle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 072A80F42279829D006FBD2D /* PictureHandle.hpp */; };
+		072A80FB227982D2006FBD2D /* DrawPicture.h in Headers */ = {isa = PBXBuildFile; fileRef = 072A80F9227982D2006FBD2D /* DrawPicture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		072A80FC227982D2006FBD2D /* DrawPicture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 072A80FA227982D2006FBD2D /* DrawPicture.mm */; };
 		07460A91227262AF00B3F2F0 /* fullscreenquad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07460A8F227262AF00B3F2F0 /* fullscreenquad.cpp */; };
 		07460A92227262AF00B3F2F0 /* fullscreenquad.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 07460A90227262AF00B3F2F0 /* fullscreenquad.hpp */; };
 		07460AA22272B60600B3F2F0 /* DrawLight.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07460A9E2272B60600B3F2F0 /* DrawLight.mm */; };
@@ -17,6 +21,25 @@
 		07460AAA2272C0AC00B3F2F0 /* Bull.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 07460AA82272C0AC00B3F2F0 /* Bull.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		07460AAD2272C0C900B3F2F0 /* DrawBull.h in Headers */ = {isa = PBXBuildFile; fileRef = 07460AAB2272C0C900B3F2F0 /* DrawBull.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07460AAE2272C0C900B3F2F0 /* DrawBull.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07460AAC2272C0C900B3F2F0 /* DrawBull.mm */; };
+		075571F1227A84DB00CB8DA4 /* SOILImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 075571EF227A84DB00CB8DA4 /* SOILImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		075571F4227A84DB00CB8DA4 /* SOILImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075571ED227A84DA00CB8DA4 /* SOILImage.framework */; };
+		075571F5227A84DB00CB8DA4 /* SOILImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 075571ED227A84DA00CB8DA4 /* SOILImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		07557204227A84FF00CB8DA4 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 075571FA227A84FF00CB8DA4 /* image_helper.c */; };
+		07557205227A84FF00CB8DA4 /* stb_image_aug.h in Headers */ = {isa = PBXBuildFile; fileRef = 075571FB227A84FF00CB8DA4 /* stb_image_aug.h */; };
+		07557206227A84FF00CB8DA4 /* SOIL.h in Headers */ = {isa = PBXBuildFile; fileRef = 075571FC227A84FF00CB8DA4 /* SOIL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07557207227A84FF00CB8DA4 /* stbi_DDS_aug.h in Headers */ = {isa = PBXBuildFile; fileRef = 075571FD227A84FF00CB8DA4 /* stbi_DDS_aug.h */; };
+		07557208227A84FF00CB8DA4 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 075571FE227A84FF00CB8DA4 /* image_DXT.c */; };
+		07557209227A84FF00CB8DA4 /* stbi_DDS_aug_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 075571FF227A84FF00CB8DA4 /* stbi_DDS_aug_c.h */; };
+		0755720A227A84FF00CB8DA4 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 07557200227A84FF00CB8DA4 /* SOIL.c */; };
+		0755720B227A84FF00CB8DA4 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 07557201227A84FF00CB8DA4 /* stb_image_aug.c */; };
+		0755720C227A84FF00CB8DA4 /* image_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 07557202227A84FF00CB8DA4 /* image_helper.h */; };
+		0755720D227A84FF00CB8DA4 /* image_DXT.h in Headers */ = {isa = PBXBuildFile; fileRef = 07557203227A84FF00CB8DA4 /* image_DXT.h */; };
+		0755720E227A851300CB8DA4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A4ED102271AEC5004C43E1 /* OpenGLES.framework */; };
+		07557210227A851C00CB8DA4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0755720F227A851C00CB8DA4 /* CoreFoundation.framework */; };
+		07557211227A877E00CB8DA4 /* SOILImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075571ED227A84DA00CB8DA4 /* SOILImage.framework */; };
+		07625D792279AEA300003E30 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 07625D782279AEA200003E30 /* libz.tbd */; };
+		079F8DB6227B53B70038F8BF /* ThreeWindows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 079F8DB4227B53B70038F8BF /* ThreeWindows.cpp */; };
+		079F8DB7227B53B70038F8BF /* ThreeWindows.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 079F8DB5227B53B70038F8BF /* ThreeWindows.hpp */; };
 		07A4E56A2271A8F3004C43E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A4E5692271A8F3004C43E1 /* AppDelegate.swift */; };
 		07A4E56C2271A8F3004C43E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A4E56B2271A8F3004C43E1 /* ViewController.swift */; };
 		07A4E56F2271A8F3004C43E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A4E56D2271A8F3004C43E1 /* Main.storyboard */; };
@@ -47,6 +70,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		075571F2227A84DB00CB8DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A4E55E2271A8F3004C43E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075571EC227A84DA00CB8DA4;
+			remoteInfo = SOILImage;
+		};
 		07A4EC0B2271ADBE004C43E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07A4E55E2271A8F3004C43E1 /* Project object */;
@@ -64,6 +94,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				07A4EC0E2271ADBE004C43E1 /* OPenGLOBJ.framework in Embed Frameworks */,
+				075571F5227A84DB00CB8DA4 /* SOILImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +102,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		072A80F32279829D006FBD2D /* PictureHandle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PictureHandle.cpp; sourceTree = "<group>"; };
+		072A80F42279829D006FBD2D /* PictureHandle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PictureHandle.hpp; sourceTree = "<group>"; };
+		072A80F9227982D2006FBD2D /* DrawPicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawPicture.h; sourceTree = "<group>"; };
+		072A80FA227982D2006FBD2D /* DrawPicture.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DrawPicture.mm; sourceTree = "<group>"; };
 		07460A8F227262AF00B3F2F0 /* fullscreenquad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fullscreenquad.cpp; sourceTree = "<group>"; };
 		07460A90227262AF00B3F2F0 /* fullscreenquad.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fullscreenquad.hpp; sourceTree = "<group>"; };
 		07460A9E2272B60600B3F2F0 /* DrawLight.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DrawLight.mm; sourceTree = "<group>"; };
@@ -81,6 +116,23 @@
 		07460AA82272C0AC00B3F2F0 /* Bull.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bull.hpp; sourceTree = "<group>"; };
 		07460AAB2272C0C900B3F2F0 /* DrawBull.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawBull.h; sourceTree = "<group>"; };
 		07460AAC2272C0C900B3F2F0 /* DrawBull.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DrawBull.mm; sourceTree = "<group>"; };
+		075571ED227A84DA00CB8DA4 /* SOILImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOILImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		075571EF227A84DB00CB8DA4 /* SOILImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOILImage.h; sourceTree = "<group>"; };
+		075571F0227A84DB00CB8DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075571FA227A84FF00CB8DA4 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		075571FB227A84FF00CB8DA4 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		075571FC227A84FF00CB8DA4 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		075571FD227A84FF00CB8DA4 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		075571FE227A84FF00CB8DA4 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		075571FF227A84FF00CB8DA4 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		07557200227A84FF00CB8DA4 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		07557201227A84FF00CB8DA4 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		07557202227A84FF00CB8DA4 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		07557203227A84FF00CB8DA4 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		0755720F227A851C00CB8DA4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		07625D782279AEA200003E30 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		079F8DB4227B53B70038F8BF /* ThreeWindows.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThreeWindows.cpp; sourceTree = "<group>"; };
+		079F8DB5227B53B70038F8BF /* ThreeWindows.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThreeWindows.hpp; sourceTree = "<group>"; };
 		07A4E5662271A8F3004C43E1 /* GLESDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLESDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A4E5692271A8F3004C43E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07A4E56B2271A8F3004C43E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -338,11 +390,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		075571EA227A84DA00CB8DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07557210227A851C00CB8DA4 /* CoreFoundation.framework in Frameworks */,
+				0755720E227A851300CB8DA4 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A4E5632271A8F3004C43E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				07A4EC0D2271ADBE004C43E1 /* OPenGLOBJ.framework in Frameworks */,
+				075571F4227A84DB00CB8DA4 /* SOILImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +412,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07557211227A877E00CB8DA4 /* SOILImage.framework in Frameworks */,
+				07625D792279AEA300003E30 /* libz.tbd in Frameworks */,
 				07A4ED132271AED2004C43E1 /* libc++.tbd in Frameworks */,
 				07A4ED122271AECB004C43E1 /* libc.tbd in Frameworks */,
 				07A4ED112271AEC5004C43E1 /* OpenGLES.framework in Frameworks */,
@@ -359,6 +423,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072A80F222798248006FBD2D /* 2DPicture */ = {
+			isa = PBXGroup;
+			children = (
+				072A80F9227982D2006FBD2D /* DrawPicture.h */,
+				072A80FA227982D2006FBD2D /* DrawPicture.mm */,
+				072A80F32279829D006FBD2D /* PictureHandle.cpp */,
+				072A80F42279829D006FBD2D /* PictureHandle.hpp */,
+			);
+			path = 2DPicture;
+			sourceTree = "<group>";
+		};
 		07460A932272B14400B3F2F0 /* Cube */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,12 +467,40 @@
 			path = Bull;
 			sourceTree = "<group>";
 		};
+		075571EE227A84DB00CB8DA4 /* SOILImage */ = {
+			isa = PBXGroup;
+			children = (
+				075571F9227A84FF00CB8DA4 /* src */,
+				075571EF227A84DB00CB8DA4 /* SOILImage.h */,
+				075571F0227A84DB00CB8DA4 /* Info.plist */,
+			);
+			path = SOILImage;
+			sourceTree = "<group>";
+		};
+		075571F9227A84FF00CB8DA4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				075571FA227A84FF00CB8DA4 /* image_helper.c */,
+				075571FB227A84FF00CB8DA4 /* stb_image_aug.h */,
+				075571FC227A84FF00CB8DA4 /* SOIL.h */,
+				075571FD227A84FF00CB8DA4 /* stbi_DDS_aug.h */,
+				075571FE227A84FF00CB8DA4 /* image_DXT.c */,
+				075571FF227A84FF00CB8DA4 /* stbi_DDS_aug_c.h */,
+				07557200227A84FF00CB8DA4 /* SOIL.c */,
+				07557201227A84FF00CB8DA4 /* stb_image_aug.c */,
+				07557202227A84FF00CB8DA4 /* image_helper.h */,
+				07557203227A84FF00CB8DA4 /* image_DXT.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		07A4E55D2271A8F3004C43E1 = {
 			isa = PBXGroup;
 			children = (
 				07A4ED232271D101004C43E1 /* Res */,
 				07A4E5682271A8F3004C43E1 /* GLESDemo */,
 				07A4EC072271ADBE004C43E1 /* OPenGLOBJ */,
+				075571EE227A84DB00CB8DA4 /* SOILImage */,
 				07A4E5672271A8F3004C43E1 /* Products */,
 				07A4E7542271A996004C43E1 /* Frameworks */,
 			);
@@ -408,6 +511,7 @@
 			children = (
 				07A4E5662271A8F3004C43E1 /* GLESDemo.app */,
 				07A4EC062271ADBE004C43E1 /* OPenGLOBJ.framework */,
+				075571ED227A84DA00CB8DA4 /* SOILImage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -428,6 +532,8 @@
 		07A4E7542271A996004C43E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0755720F227A851C00CB8DA4 /* CoreFoundation.framework */,
+				07625D782279AEA200003E30 /* libz.tbd */,
 				07A4ED102271AEC5004C43E1 /* OpenGLES.framework */,
 				07A4EC2A2271AE37004C43E1 /* Glm */,
 				07A4E7572271A9A0004C43E1 /* libc++.tbd */,
@@ -471,6 +577,8 @@
 				07A4ED262271F799004C43E1 /* framebufferobject.hpp */,
 				07460A90227262AF00B3F2F0 /* fullscreenquad.hpp */,
 				07460A8F227262AF00B3F2F0 /* fullscreenquad.cpp */,
+				079F8DB4227B53B70038F8BF /* ThreeWindows.cpp */,
+				079F8DB5227B53B70038F8BF /* ThreeWindows.hpp */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -743,6 +851,7 @@
 		07A4ED142271B270004C43E1 /* work */ = {
 			isa = PBXGroup;
 			children = (
+				072A80F222798248006FBD2D /* 2DPicture */,
 				07460AA62272C04B00B3F2F0 /* Bull */,
 				07460A9D2272B60600B3F2F0 /* Light */,
 				07460A932272B14400B3F2F0 /* Cube */,
@@ -753,23 +862,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		075571E8227A84DA00CB8DA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07557207227A84FF00CB8DA4 /* stbi_DDS_aug.h in Headers */,
+				07557206227A84FF00CB8DA4 /* SOIL.h in Headers */,
+				0755720D227A84FF00CB8DA4 /* image_DXT.h in Headers */,
+				07557209227A84FF00CB8DA4 /* stbi_DDS_aug_c.h in Headers */,
+				07557205227A84FF00CB8DA4 /* stb_image_aug.h in Headers */,
+				0755720C227A84FF00CB8DA4 /* image_helper.h in Headers */,
+				075571F1227A84DB00CB8DA4 /* SOILImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A4EC012271ADBE004C43E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				07460AA52272B60600B3F2F0 /* DrawLight.h in Headers */,
 				07460AA42272B60600B3F2F0 /* light.hpp in Headers */,
+				072A80F62279829D006FBD2D /* PictureHandle.hpp in Headers */,
 				07A4ED212271B76C004C43E1 /* DraWCube.h in Headers */,
 				07A4EC252271ADE9004C43E1 /* model.hpp in Headers */,
 				07460A92227262AF00B3F2F0 /* fullscreenquad.hpp in Headers */,
 				07A4ED182271B2BD004C43E1 /* scence.hpp in Headers */,
 				07A4EC282271ADE9004C43E1 /* shader.hpp in Headers */,
 				07460AAD2272C0C900B3F2F0 /* DrawBull.h in Headers */,
+				072A80FB227982D2006FBD2D /* DrawPicture.h in Headers */,
 				07460AAA2272C0AC00B3F2F0 /* Bull.hpp in Headers */,
 				07A4EC212271ADE9004C43E1 /* Tools.hpp in Headers */,
 				07A4EC0A2271ADBE004C43E1 /* OPenGLOBJ.h in Headers */,
 				07A4ED282271F799004C43E1 /* framebufferobject.hpp in Headers */,
 				07A4EC1F2271ADE9004C43E1 /* ggl.hpp in Headers */,
+				079F8DB7227B53B70038F8BF /* ThreeWindows.hpp in Headers */,
 				07A4EC292271ADE9004C43E1 /* vertexbuffer.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -777,6 +903,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		075571EC227A84DA00CB8DA4 /* SOILImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075571F8227A84DB00CB8DA4 /* Build configuration list for PBXNativeTarget "SOILImage" */;
+			buildPhases = (
+				075571E8227A84DA00CB8DA4 /* Headers */,
+				075571E9227A84DA00CB8DA4 /* Sources */,
+				075571EA227A84DA00CB8DA4 /* Frameworks */,
+				075571EB227A84DA00CB8DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOILImage;
+			productName = SOILImage;
+			productReference = 075571ED227A84DA00CB8DA4 /* SOILImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		07A4E5652271A8F3004C43E1 /* GLESDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07A4E5782271A8F3004C43E1 /* Build configuration list for PBXNativeTarget "GLESDemo" */;
@@ -790,6 +934,7 @@
 			);
 			dependencies = (
 				07A4EC0C2271ADBE004C43E1 /* PBXTargetDependency */,
+				075571F3227A84DB00CB8DA4 /* PBXTargetDependency */,
 			);
 			name = GLESDemo;
 			productName = GLESDemo;
@@ -824,11 +969,15 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = com.aiiage.www;
 				TargetAttributes = {
+					075571EC227A84DA00CB8DA4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					07A4E5652271A8F3004C43E1 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					07A4EC052271ADBE004C43E1 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -847,11 +996,19 @@
 			targets = (
 				07A4E5652271A8F3004C43E1 /* GLESDemo */,
 				07A4EC052271ADBE004C43E1 /* OPenGLOBJ */,
+				075571EC227A84DA00CB8DA4 /* SOILImage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		075571EB227A84DA00CB8DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A4E5642271A8F3004C43E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -873,6 +1030,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		075571E9227A84DA00CB8DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07557208227A84FF00CB8DA4 /* image_DXT.c in Sources */,
+				07557204227A84FF00CB8DA4 /* image_helper.c in Sources */,
+				0755720A227A84FF00CB8DA4 /* SOIL.c in Sources */,
+				0755720B227A84FF00CB8DA4 /* stb_image_aug.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A4E5622271A8F3004C43E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -888,6 +1056,7 @@
 			files = (
 				07A4ED172271B2BD004C43E1 /* scence.cpp in Sources */,
 				07460A91227262AF00B3F2F0 /* fullscreenquad.cpp in Sources */,
+				072A80FC227982D2006FBD2D /* DrawPicture.mm in Sources */,
 				07460AA22272B60600B3F2F0 /* DrawLight.mm in Sources */,
 				07A4EC272271ADE9004C43E1 /* model.cpp in Sources */,
 				07A4EC242271ADE9004C43E1 /* vertexbuffer.cpp in Sources */,
@@ -895,15 +1064,22 @@
 				07460AAE2272C0C900B3F2F0 /* DrawBull.mm in Sources */,
 				07460AA92272C0AC00B3F2F0 /* Bull.cpp in Sources */,
 				07A4ED222271B76C004C43E1 /* DraWCube.mm in Sources */,
+				079F8DB6227B53B70038F8BF /* ThreeWindows.cpp in Sources */,
 				07A4EC262271ADE9004C43E1 /* shader.cpp in Sources */,
 				07460AA32272B60600B3F2F0 /* light.cpp in Sources */,
 				07A4EC232271ADE9004C43E1 /* Tools.cpp in Sources */,
+				072A80F52279829D006FBD2D /* PictureHandle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		075571F3227A84DB00CB8DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075571EC227A84DA00CB8DA4 /* SOILImage */;
+			targetProxy = 075571F2227A84DB00CB8DA4 /* PBXContainerItemProxy */;
+		};
 		07A4EC0C2271ADBE004C43E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07A4EC052271ADBE004C43E1 /* OPenGLOBJ */;
@@ -931,6 +1107,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		075571F6227A84DB00CB8DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FGLYBF6X7B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SOILImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiiage.www.Sico.ESGL.Demo.SOILImage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		075571F7227A84DB00CB8DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FGLYBF6X7B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SOILImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiiage.www.Sico.ESGL.Demo.SOILImage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		07A4E5762271A8F3004C43E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1052,7 +1284,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FGLYBF6X7B;
+				DEVELOPMENT_TEAM = AC6X4W7N6Y;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = GLESDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1070,7 +1303,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FGLYBF6X7B;
+				DEVELOPMENT_TEAM = AC6X4W7N6Y;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = GLESDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1086,6 +1320,7 @@
 		07A4EC102271ADBE004C43E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1094,6 +1329,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = OPenGLOBJ/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1105,6 +1341,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aiiage.www.Sico.ESGL.Demo.OPenGLOBJ;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1114,6 +1352,7 @@
 		07A4EC112271ADBE004C43E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1122,6 +1361,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = OPenGLOBJ/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1133,6 +1373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aiiage.www.Sico.ESGL.Demo.OPenGLOBJ;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1142,6 +1383,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		075571F8227A84DB00CB8DA4 /* Build configuration list for PBXNativeTarget "SOILImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075571F6227A84DB00CB8DA4 /* Debug */,
+				075571F7227A84DB00CB8DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07A4E5612271A8F3004C43E1 /* Build configuration list for PBXProject "GLESDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
